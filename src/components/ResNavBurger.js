@@ -11,6 +11,13 @@ const StyledBurger = styled.div`
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
+    z-index: 20;
+
+    @media (max-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+  }
 
     div {
         width: 2rem;
@@ -41,7 +48,6 @@ const [open, setOpen] = useState(false)
         <div/>
         <div/>
         <div/>
-
     </StyledBurger>
     <ResNavMenuLinks open={open}/>
     </>

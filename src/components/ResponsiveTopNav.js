@@ -23,14 +23,15 @@ const Nav = styled.nav`
 
 
 
-export default function ResponsiveTopNav() {
+const ResponsiveTopNav = () => {
   return (
     <Nav>
       <div className='logo'>
         Nav bar
       </div>
       <ResNavBurger/>
-      
     </Nav>
   )
 }
+
+export default ResponsiveTopNav

@@ -8,6 +8,7 @@ const MenuUl = styled.ul`
     list-style: none;
     display: flex;
     flex-flow: row nowrap;
+    /* display: none; */
 
     
     li {
@@ -16,15 +17,16 @@ const MenuUl = styled.ul`
     }
 
     @media (max-width: 760px) {
-        display: none;
         flex-flow: column nowrap;
+        background-color: #0D2538;
         position: fixed;
+        transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
         top: 0;
         right: 0;
         height: 100vh;
         width: 300px;
         padding-top: 3.5rem;
-        transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'};
+        transition: transform 0.3s ease-in-out;
         /* animation: 1s stretch; */
         background: linear-gradient(25deg, rgba(0,0,0,1) 0%, rgba(75,0,0,1) 41%, rgba(0,0,0,1) 42%, rgba(0,0,0,1) 44%, rgba(116,1,1,1) 67%, rgba(0,0,0,1) 68%);                transition: 4.0s;
 
