@@ -91,3 +91,7 @@ const ResNavMenuLinks = ({ open }) => {
 }
 
 export default ResNavMenuLinks
+
+// this component is production ready as of 1/9/2022
+// baked-in animations and texture changes will remain intact pending necessary
+// clean-up for production use
