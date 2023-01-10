@@ -13,7 +13,7 @@ const MenuUl = styled.ul`
     
     li {
       padding: 18px 10px;
-      transition: 2.3s;
+      /* transition: 2.3s; */
     }
 
     @media (max-width: 760px) {
@@ -28,29 +28,9 @@ const MenuUl = styled.ul`
         padding-top: 3.5rem;
         transition: transform 0.3s ease-in-out;
         /* animation: 1s stretch; */
-        background: linear-gradient(25deg, rgba(0,0,0,1) 0%, rgba(75,0,0,1) 41%, rgba(0,0,0,1) 42%, rgba(0,0,0,1) 44%, rgba(116,1,1,1) 67%, rgba(0,0,0,1) 68%);                transition: 4.0s;
+        background: linear-gradient(25deg, rgba(0,0,0,1) 0%, rgba(75,0,0,1) 41%, rgba(0,0,0,1) 42%, rgba(0,0,0,1) 44%, rgba(116,1,1,1) 67%, rgba(0,0,0,1) 68%);                
+        /* transition: 4.0s; */
 
-        /* transition: 1.0s; */
-        /* animation: pulse 3s ease-in; */
-        /* animation-duration: 3s; */
-        
-        /* @keyframes slidein {
-            0% {
-                background: white;
-
-             
-            }
-            
-            
-            100% {
-                background: linear-gradient(25deg, rgba(0,0,0,1) 0%, rgba(75,0,0,1) 41%, rgba(0,0,0,1) 42%, rgba(0,0,0,1) 44%, rgba(116,1,1,1) 67%, rgba(0,0,0,1) 68%);                transition: 4.0s;
-                transition-timing-function: ease-in-out;
-                opacity: 100%;
-
-                animation-duration: 3s;
-            }
-            
-        } */
 
         li {
             color: coral;

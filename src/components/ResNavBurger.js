@@ -11,7 +11,7 @@ const StyledBurger = styled.div`
     display: none;
     justify-content: space-around;
     flex-flow: column nowrap;
-    z-index: 200;
+    z-index: 20;
 
     @media (max-width: 760px) {
     display: flex;
@@ -40,7 +40,7 @@ const StyledBurger = styled.div`
 `
 
 export default function ResNavBurger() {
-const [open, setOpen] = useState(false)
+const [open, setOpen] = useState(false);
 
   return (
     <>
