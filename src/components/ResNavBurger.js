@@ -8,12 +8,12 @@ const StyledBurger = styled.div`
     position: fixed;
     top: 15px;
     right: 20px;
-    display: flex;
+    display: none;
     justify-content: space-around;
     flex-flow: column nowrap;
-    z-index: 20;
+    z-index: 200;
 
-    @media (max-width: 768px) {
+    @media (max-width: 760px) {
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
@@ -25,7 +25,7 @@ const StyledBurger = styled.div`
         background-color: ${({open}) => open ? 'coral' : 'coral'};
         border-radius: 10px;
         transform-origin: 1px;
-        transition: all 0.3s linear;
+        transition: all 0.0s linear;
         &:nth-child(1) {
             transform: ${({open}) => open ? 'rotate(45deg)' : 'rotate(0)'};
         }

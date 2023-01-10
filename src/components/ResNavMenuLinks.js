@@ -92,10 +92,7 @@ const MenuUl = styled.ul`
             transition-timing-function: ease-out;
             color: #FF4520;
         } */
-
     }
-    
-  
 `
 
 const ResNavMenuLinks = ({ open }) => {
