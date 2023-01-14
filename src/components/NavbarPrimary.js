@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { AppBar, Drawer, Toolbar, Typography } from '@mui/material'
+import ResNavBurger from './ResNavBurger'
+import ResponsiveTopNav from './ResponsiveTopNav'
 
 export default function NavbarPrimary() {
   return (
@@ -10,8 +12,10 @@ export default function NavbarPrimary() {
               <Toolbar>
                   <Typography>
                       {/* Links go here */}
-                      Hellstrom Investment Group, LLC. 
+                      
                   </Typography>
+                  {/* <ResNavBurger/> */}
+                  <ResponsiveTopNav/>
               </Toolbar>
           </LiveAppBar>
           <Toolbar/>

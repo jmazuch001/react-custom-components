@@ -62,8 +62,8 @@ const toggleTheme = () => {
         
         <div className="App">
            {/* <Navbar /> */}
-           {/* <NavbarPrimary /> */}
-            <ResponsiveTopNav/>
+           <NavbarPrimary />
+            {/* <ResponsiveTopNav/> */}
            {/* <BreatheAnim /> */}
            <ThemeProvider theme={baseTheme === true ? BaseTheme : DarkTheme}>
                 <GlobalStyles/>
