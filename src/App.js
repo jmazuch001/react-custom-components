@@ -21,7 +21,8 @@ import ChangeStateButton from './state components/ChangeStateButton';
 import GlobalStyles from './components/global-styles';
 import Form from './components/Form'
 import ResponsiveTopNav from './components/ResponsiveTopNav';
-
+import ProgressBar from './components/Progress Bar/ProgressBar';
+import MUITable from './components/MUI Tables/MUITable'
 const StyledBtn = styled(Button)`
 text-transform: capitalize;
 `
@@ -65,16 +66,15 @@ const toggleTheme = () => {
            <NavbarPrimary />
             {/* <ResponsiveTopNav/> */}
            {/* <BreatheAnim /> */}
-           <ThemeProvider theme={baseTheme === true ? BaseTheme : DarkTheme}>
-                <GlobalStyles/>
+           {/* <ThemeProvider theme={baseTheme === true ? BaseTheme : DarkTheme}>
                 <Container>
                     <h1>Hello World</h1>
                     <button className='btn' onClick={toggleTheme}>Toggle Me</button>
                 </Container>
                 
-           </ThemeProvider>
+           </ThemeProvider> */}
            
-           <div style={{ padding: '2rem'}}>
+           {/* <div style={{ padding: '1rem'}}> */}
             {/* <Title special>Styled Component</Title>
             <Title>Styled Component w/o Special Prop Attached</Title>
             <DefaultButton>Click Me</DefaultButton>
@@ -83,9 +83,9 @@ const toggleTheme = () => {
             <Button color='primary' variant="contained">MUI Button</Button> */}
             {/* <ComplexTitle title='more complex title'></ComplexTitle>
             <AnotherComplexTitle title="another complex title another way"/> */}
-            <Card />
-            
-           </div>
+            {/* <Card />
+            <ProgressBar/> */}
+           {/* </div> */}
             
             <Switch>
                 <Route path="/" exact component={Home} />
