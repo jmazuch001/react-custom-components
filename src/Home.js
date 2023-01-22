@@ -1,5 +1,6 @@
 import React from 'react'
 import { DefaultButton, HipsterButton } from './components/Buttons';
+import StageOne from './components/MUI Forms/StageOne';
 import MUITable from './components/MUI Tables/MUITable'
 
 function Home() {
@@ -14,6 +15,7 @@ function Home() {
         <div>
             
             <MUITable/>
+            <StageOne />
         </div>
 
     )

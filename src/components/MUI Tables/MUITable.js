@@ -7,7 +7,8 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import styled from 'styled-components'
-
+import { useMediaQuery } from 'react-responsive'
+import MediaQuery from "react-responsive";
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 
@@ -58,6 +59,9 @@ export default function BasicTable() {
             </TableRow>
           ))}
         </TableBody>
+        <MediaQuery query="(max-device-width: 1024px)">
+          <p>This is a MQ Test</p>
+        </MediaQuery>
       </Table>
     </CustomTableContainer>
     </CustomBox>
@@ -93,9 +97,10 @@ background-color: gray;
 padding: 1rem;
 /* width: 50%; */
 margin: 2rem 6rem 6rem 6rem;
-
+display: flex;
 @media (max-width: 768px) {
-  display: flex;
+  /* display: none; hides the component once it hits this viewport size */
+  display: none;
   background-color: blue;
   border-radius: 20px;
   width: 100%;
