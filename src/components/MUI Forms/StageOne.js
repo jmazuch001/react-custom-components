@@ -13,6 +13,9 @@ import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import TextField from "@mui/material/TextField";
 import TextInput from './MultiStage Forms/CustTextField';
+import Button from '@mui/material/Button';
+
+import { CornerButton } from './MultiStage Forms/CustButton';
 
 export default function StageOne() {
 
@@ -33,7 +36,11 @@ export default function StageOne() {
                 <label>Date of Birth: </label>
                     <TextInput></TextInput>
             </ul>
+            <div>
+                <CornerButton variant="contained">Next Stage</CornerButton>
+            </div>
         </FirstStageContainer>
+        
     </FormBox>
   )
 }
@@ -66,7 +73,7 @@ color: coral;
   /* display: none; hides the component once it hits this viewport size */
   display: flex;
   /* background-color: lightgray; */
-  background: linear-gradient(25deg, rgba(128,128,128,1) 0%, rgba(56,56,56,1) 49%, rgba(113,113,113,1) 84%);
+  background: linear-gradient(25deg, rgba(128,128,128,1) 0%, rgba(56,56,56,1) 49%, rgba(113,113,113,1) 50%);
   margin: auto;
   border-radius: 20px;
   width: auto;
