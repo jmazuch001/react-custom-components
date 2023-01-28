@@ -5,3 +5,4 @@ export default function StageTwo() {
     <div>StageTwo</div>
   )
 }
+
