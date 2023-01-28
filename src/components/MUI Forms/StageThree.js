@@ -1,6 +1,12 @@
 import React from 'react'
+import TextInput from './MultiStage Forms/CustTextField';
+import Button from '@mui/material/Button';
+import { FormBox } from './MultiStage Forms/CustFormComponents';
+import { FormStageContainer } from './MultiStage Forms/CustFormComponents';
 
-export default function StageTwo() {
+import { CornerButton } from './MultiStage Forms/CustButton';
+
+export default function StageThree() {
   return (
     <FormBox >
         <FormStageContainer>
