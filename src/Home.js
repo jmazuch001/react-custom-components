@@ -1,9 +1,12 @@
 import React from 'react'
 import { DefaultButton, HipsterButton } from './components/Buttons';
+import { SUIStageOne } from './components/MUI Forms/MultiStage Forms/SUIStageOne';
 import StageOne from './components/MUI Forms/StageOne';
 import StageThree from './components/MUI Forms/StageThree';
 import StageTwo from './components/MUI Forms/StageTwo';
 import MUITable from './components/MUI Tables/MUITable'
+import SUITable from './components/SUI Forms/SUITable'
+
 
 function Home() {
     return (
@@ -17,9 +20,13 @@ function Home() {
         <div>
             
             <MUITable/>
-            <StageOne />
+            <SUITable />
+            {/* <StageOne />
             <StageTwo />
-            <StageThree />
+            <StageThree /> */}
+            {/* <StageOne /> */}
+            {/* Semantic UI React Test Code Below */}
+            <SUIStageOne/>
         </div>
 
     )

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { AppBar, Drawer, Toolbar, Typography } from '@mui/material'
 import ResNavBurger from './ResNavBurger'
 import ResponsiveTopNav from './ResponsiveTopNav'
+import { Menu } from 'semantic-ui-react'
 
 export default function NavbarPrimary() {
   return (
@@ -24,7 +25,7 @@ export default function NavbarPrimary() {
   )
 }
 
-const LiveAppBar = styled(AppBar)`
+const LiveAppBar = styled(Menu)`
   background: linear-gradient(34deg, rgb(1, 27, 56) 8%, rgba(0,0,0,1) 10%, rgb(42, 42, 42) 32%, rgba(0,0,0,1) 42%, rgb(54, 54, 54) 56%, rgba(15,15,15,1) 77%, rgb(85, 38, 11) 92%);
   background-size:  300% 300%;
   animation: gradient 10s ease infinite;       
@@ -62,7 +63,7 @@ const LiveAppBar = styled(AppBar)`
     right: 0;
     width: 0;
     bottom: -5px;
-    /* background: linear-gradient(90deg, rgb(226, 221, 215) 3%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 32%, rgba(125,63,16,1) 42%, rgba(0,0,0,1) 100%); */
+    background: linear-gradient(90deg, rgb(226, 221, 215) 3%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 32%, rgba(125,63,16,1) 42%, rgba(0,0,0,1) 100%);
     background: #FF0000;
     height: 4px;
     transition-duration: 2.3s;

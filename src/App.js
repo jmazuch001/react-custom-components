@@ -23,6 +23,7 @@ import Form from './components/Form'
 import ResponsiveTopNav from './components/ResponsiveTopNav';
 import ProgressBar from './components/Progress Bar/ProgressBar';
 import MUITable from './components/MUI Tables/MUITable'
+import NavbarSecondary from './components/Semantic UI Components/NavbarSecondary';
 const StyledBtn = styled(Button)`
 text-transform: capitalize;
 `
@@ -64,6 +65,7 @@ const toggleTheme = () => {
         <div className="App">
            {/* <Navbar /> */}
            <NavbarPrimary />
+           {/* <NavbarSecondary /> */}
             {/* <ResponsiveTopNav/> */}
            {/* <BreatheAnim /> */}
            {/* <ThemeProvider theme={baseTheme === true ? BaseTheme : DarkTheme}>

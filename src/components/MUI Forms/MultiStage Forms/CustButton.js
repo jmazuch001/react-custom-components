@@ -1,5 +1,6 @@
 import React from 'react'
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
+import { Button } from 'semantic-ui-react'
 import styled from 'styled-components'
 // export default function CustButton() {
 //   return (
