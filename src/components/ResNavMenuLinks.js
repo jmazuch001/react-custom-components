@@ -9,11 +9,20 @@ const MenuUl = styled.ul`
     flex-flow: row nowrap;
 
 
+  
     
     li {
       padding: 18px 10px;
       /* transition: 2.3s; */
     }
+
+    section {
+      float: left;
+      text-decoration: none;
+      padding-top: 14px;
+      text-align: center;
+    }
+  
 
     @media (max-width: 768px) {
         flex-flow: column nowrap;
@@ -31,20 +40,23 @@ const MenuUl = styled.ul`
         border-bottom-left-radius: 10%;
         border-left-color: #8CCB88;
         border-left-style: groove;
+        text-align: center;
         /* animation: 1s stretch; */
         /* background: linear-gradient(25deg, rgba(0,0,0,1) 0%, rgba(75,0,0,1) 41%, rgba(0,0,0,1) 42%, rgba(0,0,0,1) 44%, rgba(116,1,1,1) 67%, rgba(0,0,0,1) 68%);                 */
         /* transition: 4.0s; */
 
-        background: radial-gradient(circle, rgba(0,0,0,1) 24%, rgba(35,56,0,1) 50%);
-
+        /* background: radial-gradient(circle, rgba(0,0,0,1) 24%, rgba(35,56,0,1) 50%); */
+        background: rgb(0,0,0);
+        background: radial-gradient(circle, rgba(0,0,0,1) 24%, rgba(0,98,120,1) 100%);
 
 
         background-size:  300% 300%;
         animation: gradient 10s ease infinite; 
 
         li {
-            color: coral;
+            color: lightgreen;
             /* transition: 0.5s; */
+            text-align: left;
         }
         li:hover {
             text-shadow: 2px 1px 4px rgba(255,255,255,0.3);
@@ -68,16 +80,18 @@ const MenuUl = styled.ul`
             /* transition-delay: 0.5s; */
             color: #B0FDAA;
             border-radius: 15px;
-            border-left: 2px solid rgb(89, 250, 156);
-            border-right: 2px solid rgb(89, 250, 156);
+            border-left: 2px solid rgb(0, 115, 141);
+            border-right: 2px solid rgb(0, 115, 141);
             transition-timing-function: ease-in-out;
             padding: 5px;
             border-radius: 17.5px;
             width: 90%;
             opacity: 55%;
             background: rgb(0,0,0);
-            background: radial-gradient(circle, rgba(0,0,0,1) 24%, rgba(11,18,0,1) 100%);
-            
+            /* background: radial-gradient(circle, rgba(0,0,0,1) 24%, rgba(11,18,0,1) 100%); */
+            background: rgb(0,0,0);
+            background: radial-gradient(circle, rgba(0,0,0,1) 24%, rgba(0,30,37,1) 100%);
+
 
             /* transform: translateY(7px); */
             /* background: linear-gradient(25deg, rgba(0,0,0,1) 19%, rgba(92,0,0,1) 22%, rgba(0,0,0,1) 26%); */

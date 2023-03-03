@@ -48,7 +48,7 @@ export function SUIStageOne() {
     /* background: rgb(31,31,31); */
     /* background: linear-gradient(25deg, rgba(31,31,31,1) 0%, rgba(0,0,0,1) 42%, rgba(13,37,0,1) 53%, rgba(0,0,0,1) 64%, rgba(22,22,22,1) 100%); */
     /* background-color: rgb(1, 12, 12, 0.2); */
-    color: #8CCB88;
+    color: lightgreen;
     text-shadow: 0px 1px 2px #E0E0E0;
     box-shadow: rgba(10, 100, 93, 0.65) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 
@@ -81,7 +81,7 @@ export function SUIStageOne() {
   
     h1 {
       text-align: center;
-      color: #BFFFBA;
+      color: white;
     }
 
   `;
