@@ -112,10 +112,14 @@ display: flex;
 width: auto;
 border: solid;
 border-radius: 10px 100px / 120px;
-border-color: rgb(38, 57, 77);
+border-color: #3A8135;
 border-collapse: collapse;
-box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-border-right: 7mm groove coral;
+/* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+border-right: 4mm groove #3A8135;
+-webkit-box-shadow: 4px 0px 17px 1px rgba(184,82,4,0.66);
+-moz-box-shadow: 4px 0px 17px 1px rgba(184,82,4,0.66);
+box-shadow: 4px 0px 17px 1px rgba(38, 57, 77, 0.66);
+
 
 @media (max-width: 768px) {
   /* display: none; hides the component once it hits this viewport size */
