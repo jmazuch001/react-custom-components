@@ -70,6 +70,7 @@ export default function BasicTable() {
       </Table.Row>
     </Table.Body>
   </Table>
+  {/* <hr></hr> */}
         <MediaQuery query="(max-device-width: 1024px)">
           <></>
         </MediaQuery>
@@ -86,14 +87,32 @@ margin: auto;
 width: 100%;
 height: 100%;
 /* border: solid; */
-border-color: coral;
+/* border-color: coral; */
 border-collapse: collapse;
 /* background-color: blue; */
 border-radius: 10px 100px / 120px;
 
+/* hr {
+  background-color: red;
+  transition: 1s;
+  padding: 13px;
+  border-radius: 45%;
+  border-style: dashed  ;
+
+}
+
+hr:hover {
+  animation-play-state: running;
+  background-color: green;
+  transition: 1s;
+  animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+  border-radius: 45%;
+  border-style: solid;
+} */
 h1 {
   text-align: center;
   text-shadow: -1px 1px 1px rgb(38, 57, 77);
+  color: white;
 }
 @media (max-width: 768px) {
   display: flex;
@@ -112,15 +131,22 @@ display: flex;
 width: auto;
 border: solid;
 border-radius: 10px 100px / 120px;
-border-color: #3A8135;
+border-color: rgb(89, 250, 156);
 border-collapse: collapse;
+/* border-right-color: transparent;
+border-left-color: transparent; */
 /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
-border-right: 4mm groove #3A8135;
+/* border-top: 2px solid rgb(89, 250, 156);
+border-bottom: 2px solid rgb(89, 250, 156); */
+background-color: rgb(1, 12, 12, 1.0);
 -webkit-box-shadow: 4px 0px 17px 1px rgba(184,82,4,0.66);
 -moz-box-shadow: 4px 0px 17px 1px rgba(184,82,4,0.66);
-box-shadow: 4px 0px 17px 1px rgba(38, 57, 77, 0.66);
+box-shadow: rgba(10, 100, 93, 0.65) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 
-
+Table {
+  color: lightgray;
+  font-size: 16px;
+}
 @media (max-width: 768px) {
   /* display: none; hides the component once it hits this viewport size */
   display: none;

@@ -33,6 +33,7 @@ const LiveAppBar = styled(Menu)`
   color: white;
   /* position: sticky; */
   
+
   @keyframes gradient {
   0% {
     background-position: 0%;

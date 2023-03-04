@@ -22,14 +22,12 @@ const MenuUl = styled.ul`
   -webkit-background-clip: text;
   text-fill-color: transparent;
   -webkit-text-fill-color: transparent; */
-
     }
     h4 {
       display: none;
     }
  
   
-
     @media (max-width: 768px) {
         flex-flow: column nowrap;
         background-color: #0D2538;
@@ -50,19 +48,13 @@ const MenuUl = styled.ul`
         /* animation: 1s stretch; */
         /* background: linear-gradient(25deg, rgba(0,0,0,1) 0%, rgba(75,0,0,1) 41%, rgba(0,0,0,1) 42%, rgba(0,0,0,1) 44%, rgba(116,1,1,1) 67%, rgba(0,0,0,1) 68%);                 */
         /* transition: 4.0s; */
-
         /* background: radial-gradient(circle, rgba(0,0,0,1) 24%, rgba(35,56,0,1) 50%); */
         background: rgb(0,0,0);
         background: radial-gradient(circle, rgba(0,0,0,1) 24%, rgba(0,98,120,1) 100%);
-
-
         background-size:  300% 300%;
         animation: gradient 10s ease infinite; 
         
-        section {
-          margin-right: 0.5rem;
-        }
-
+       
         h4 {
           display: inline-block;
           text-align: center;
@@ -91,7 +83,6 @@ const MenuUl = styled.ul`
             border-radius: 12px;
             width: 50%;
             transition-timing-function: ease-in-out;
-
         }
         .div:hover {
             transform: translateY(10px);
@@ -111,8 +102,6 @@ const MenuUl = styled.ul`
             /* background: radial-gradient(circle, rgba(0,0,0,1) 24%, rgba(11,18,0,1) 100%); */
             background: rgb(0,0,0);
             background: radial-gradient(circle, rgba(0,0,0,1) 24%, rgba(0,30,37,1) 100%);
-
-
             /* transform: translateY(7px); */
             /* background: linear-gradient(25deg, rgba(0,0,0,1) 19%, rgba(92,0,0,1) 22%, rgba(0,0,0,1) 26%); */
         }
@@ -156,8 +145,3 @@ const ResNavMenuLinks = ({ open }) => {
 }
 
 export default ResNavMenuLinks
-
-// this component is production ready as of 1/9/2022
-// baked-in animations and texture changes will remain intact pending necessary
-// clean-up for production use
-// Animations included for gradient

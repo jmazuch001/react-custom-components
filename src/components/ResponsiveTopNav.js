@@ -33,11 +33,12 @@ const Nav = styled.nav`
       -webkit-background-clip: text;
       text-fill-color: transparent;
       -webkit-text-fill-color: transparent;
-
+      /* display: flex; */
       padding: 12px;
       font-size: 20px;
       }
     }
+
     @media (max-width: 768px) {
       h4 {
         display: none;
