@@ -18,6 +18,31 @@ const Nav = styled.nav`
     
   }
 
+  section {
+      /* float: left; */
+      text-decoration: none;
+      /* margin-top: 10px; */
+      text-align: center;
+      margin-left: 3rem;
+
+      h4 {
+      float: left;
+      color: #80d5e8;
+      background-image: -webkit-radial-gradient(circle, #80d5e8 0%,#045d8c 100%,#ffffff 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      text-fill-color: transparent;
+      -webkit-text-fill-color: transparent;
+
+      padding: 12px;
+      font-size: 20px;
+      }
+    }
+    @media (max-width: 768px) {
+      h4 {
+        display: none;
+      }
+    }
 
 `
 
@@ -30,8 +55,11 @@ const ResponsiveTopNav = () => {
         {/* <img src='/media content/HIG_Logo_Trans.png'/> */}
         
           <HIGROUPLogo />
-       
+          
       </div>
+        <section>
+          <h4>Hellstrom Investment Group, LLC.</h4>
+        </section>
       <ResNavBurger/>
     </Nav>
   )

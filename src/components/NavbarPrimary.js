@@ -9,14 +9,11 @@ export default function NavbarPrimary() {
     
       <div>
           <LiveAppBar>
-              <ul>
-                  
-                      {/* Links go here */}
-                      
-                  
+              
+
                   {/* <ResNavBurger/> */}
                   <ResponsiveTopNav/>
-              </ul>
+            
           </LiveAppBar>
           
       </div>
@@ -32,9 +29,10 @@ const LiveAppBar = styled(Menu)`
   animation: gradient 10s ease infinite;       
   display: flex;
   width: 100%;
-  padding: 12px;
+  padding: 18px;
   color: white;
   /* position: sticky; */
+  
   @keyframes gradient {
   0% {
     background-position: 0%;
@@ -46,9 +44,6 @@ const LiveAppBar = styled(Menu)`
     background-position: 0%;
   }
 }
-
-
-
 /* &:hover:after, 
 &:focus:after,
 &:active:after {

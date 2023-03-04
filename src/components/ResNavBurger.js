@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
 import ResNavMenuLinks from './ResNavMenuLinks'
-
+import {Container} from 'semantic-ui-react'
 const StyledBurger = styled.div`
     width: 2rem;
     height: 2rem;
@@ -49,7 +49,9 @@ const [open, setOpen] = useState(false);
         <div/>
         <div/>
     </StyledBurger>
-    <ResNavMenuLinks open={open}/>
+    <Container>
+      <ResNavMenuLinks open={open}/>
+    </Container>
     </>
   )
 }

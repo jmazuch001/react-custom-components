@@ -1,27 +1,33 @@
 import React from 'react'
 import styled from 'styled-components'
 import ComplexTitle from './ComplexTitle'
-
+import { Container } from 'semantic-ui-react'
 
 const MenuUl = styled.ul`
     list-style: none;
     display: flex;
     flex-flow: row nowrap;
-
-
-  
+    float: right;
     
     li {
       padding: 18px 10px;
       /* transition: 2.3s; */
-    }
+      color: lightgreen;
+      align-items: right;
+      float: right;
+  // CSS
+  /* color: #80d5e8;
+  background-image: -webkit-radial-gradient(ellipse, #80d5e8 0%,#ffffff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 
-    section {
-      float: left;
-      text-decoration: none;
-      padding-top: 14px;
-      text-align: center;
     }
+    h4 {
+      display: none;
+    }
+ 
   
 
     @media (max-width: 768px) {
@@ -40,7 +46,7 @@ const MenuUl = styled.ul`
         border-bottom-left-radius: 10%;
         border-left-color: #8CCB88;
         border-left-style: groove;
-        text-align: center;
+        /* text-align: center; */
         /* animation: 1s stretch; */
         /* background: linear-gradient(25deg, rgba(0,0,0,1) 0%, rgba(75,0,0,1) 41%, rgba(0,0,0,1) 42%, rgba(0,0,0,1) 44%, rgba(116,1,1,1) 67%, rgba(0,0,0,1) 68%);                 */
         /* transition: 4.0s; */
@@ -52,7 +58,21 @@ const MenuUl = styled.ul`
 
         background-size:  300% 300%;
         animation: gradient 10s ease infinite; 
+        
+        section {
+          margin-right: 0.5rem;
+        }
 
+        h4 {
+          display: inline-block;
+          text-align: center;
+          color: #80d5e8;
+          background-image: -webkit-radial-gradient(circle, #80d5e8 0%,#045d8c 100%,#ffffff 100%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          text-fill-color: transparent;
+          -webkit-text-fill-color: transparent;
+        }
         li {
             color: lightgreen;
             /* transition: 0.5s; */
@@ -120,14 +140,17 @@ const MenuUl = styled.ul`
 const ResNavMenuLinks = ({ open }) => {
   return (
     <MenuUl open={open}>
-        <section>
-            <h4>123 Investment Group</h4>
-        </section>
-        <li className='div'>Home</li>
-        <li className='div'>About us</li>
-        <li className='div'>Contact Us</li>
-        <li className='div'>Sign In</li>
-        <li className='div'>Div</li>
+        {/* <section>
+            <h4>Hellstrom Investment Group, LLC.</h4>
+        </section> */}
+        
+          <h4>Hellstrom Investment Group, LLC.</h4>
+          <li className='div'>Home</li>
+          <li className='div'>About us</li>
+          <li className='div'>Contact Us</li>
+          <li className='div'>Sign In</li>
+          <li className='div'>Div</li>   
+        
     </MenuUl>
   )
 }
